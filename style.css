@@ -6,13 +6,36 @@ body {
 
 h1 {
 
+	padding-top:20pt;
+	color:#000000;
+	font-size:2em;
+	padding-bottom:6pt;
+	line-height:1.15;
+	page-break-after:avoid;
 	text-align: center;
-	font-size: 40px;
+}
+
+p {
+	margin:2em;
+	color:#000000;
+	font-size:1em;
+
+}
+
+img {
+width: 80%;
+position: relative;
+background-color: white;
+margin: 20px;
+margin-left: 50px;
+
 }
 
 
-
-div {display: inline-block;}
+div {
+	display: inline-block;
+	position: relative;
+}
 
 .content {
 	width: 100%;
@@ -20,33 +43,29 @@ div {display: inline-block;}
     background-color: gray;
 }
 
-.images {
-
-max-width: 400px;
-max-height: 1800px;
+.images{
+width: 25%;
 position: relative;
 background-color: white;
-margin-left: 15px;
-
+margin: 0 auto;
+border: 1px solid white;
 }
 
 .text {
-
-max-width: 600px;
-max-height: 1800px;
+width:45%;
 position: relative;
 background-color: white;
-margin: 5px;
+margin: 10px auto;
+border: 1px solid white;
 
 }
 
 .glossary {
-
-max-width: 500px;
-max-height: 1800px;
+width: 25%;
 position: relative;
 background-color: white;
-margin-right: 15px;
+margin: 0 auto;
+border: 1px solid white;
 
 }
 
