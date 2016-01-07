@@ -1,0 +1,100 @@
+    .sub-menu-parent { position: relative; }
+  
+    .sub-menu { 
+      visibility: hidden; /* hides sub-menu */
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      width: 10%;
+      transform: translateZ(0);
+      transform: translateY(10%);
+      transition: all 0.5s ease 0s, visibility 0s linear 0.5s; /* the last value is the transition-delay for visibility */
+    }
+
+    .sub-menu-parent:hover .sub-menu {
+      visibility: visible; /* shows sub-menu */
+      opacity: 1;
+      transform: translateX(0%);
+      transition-delay: 0s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+    }
+
+/* presentational */
+body { padding: 2%; }
+
+nav a:hover { color: black; 
+
+}
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: none; text-align: center; 
+}
+nav > ul > li { display: inline-block; }
+nav > ul > li:first-child { border-left: none; }
+
+.sub-menu {
+  background: white;
+}
+
+@font-face {
+   font-family: 'Open Sans';  /* Importantly, the same as in the above block; the family name. */
+   src: url('Open Sans.ttf') format('truetype');
+   font-style: medium;  /* Associates values of "italic" with this resource. */
+   font-weight: normal;  /* ... It's not a bold-italic font style. */
+}
+
+
+
+
+
+body {
+
+ 
+  background-image: url("media/hands.gif");
+  background-repeat: no-repeat;
+  background-border: 200px solid white;
+  background-size: 50%;
+  background-color: black;
+
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+h1 {
+
+  
+
+  font-size:1,5em;
+  
+  page-break-after:avoid;
+  text-align: center;
+  opacity: 0.4;
+  margin: 100px;
+}
+
+
+.content {
+  
+
+  margin: 0px auto;
+  width:100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+   
+    
+}
+
+
+h1 {
+
+  
+
+  font-size:1,5em;
+  color: white;
+  page-break-after:avoid;
+  text-align: center;
+
+}
+
