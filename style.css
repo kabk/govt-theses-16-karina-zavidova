@@ -28,13 +28,14 @@ body {
 h1 {
 
 	
+font-family: LeagueGothic-Regular, sans-serif;
+font-variant: small-caps;
+font-size: 3em;
+letter-spacing: 10px;
+page-break-after:avoid;
+text-align: center;
+color: gray;
 
-	font-size:1,5em;
-	
-	page-break-after:avoid;
-	text-align: center;
-	opacity: 0.2;
- filter: alpha(opacity=40);
 }
 
 
@@ -72,8 +73,8 @@ line-height: 1.7;
 margin-bottom: 15px;
 margin-left: 70px;
 margin-right: 90px;
-opacity: 0.4;
- filter: alpha(opacity=40);
+font-family: BLOKK, sans-serif;
+
 
 
 
@@ -81,8 +82,7 @@ opacity: 0.4;
 }
 
 p:hover {
-	opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+	font-family: Open Sans, sans-serif;
 }
 
 p + p {   
@@ -119,6 +119,17 @@ margin-left: 50px;
     
 }
 
+
+li {
+
+font-family: LeagueGothic-Regular, sans-serif;
+font-variant: small-caps;
+font-size: 1.5em;
+letter-spacing: 10px;
+margin-bottom: 20px;
+color: gray;
+list-style-type: none;
+}
 
 
 .images{
@@ -202,7 +213,8 @@ z-index: 0;
 /* presentational */
 body { padding: 2%; }
 
-nav a:hover { color: black; 
+a:hover { color: black; 
+
 
 }
 nav ul,
@@ -212,5 +224,77 @@ nav > ul { background: none; text-align: center;
 }
 nav > ul > li { display: inline-block; }
 nav > ul > li:first-child { border-left: none; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  width: 200px;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  top: 100px;
+  left: 100px;
+  position: fixed;
+  width: 200px;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  
+}
+.popup .close {
+  position: absolute;
+  transition: all 200ms;
+  top: -10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup .close:hover {
+  color: yellow;
+}
+.popup .content {
+  max-height: 30%;
+  width: 300px;
+  overflow: autansition: all 0.3s ease-out;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+
+
+.box {
+  
+  background: rgba(255,255,255,0.2);
+  
+}
+
+.button a {
+  
+  color: #fff;
+  
+}
+.button:hover {
+  background: yellow;
+}
+
 
 
