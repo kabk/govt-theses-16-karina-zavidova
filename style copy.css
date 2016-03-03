@@ -4,9 +4,7 @@ html { height: 100%; width: 100%;}
 
 body { background-color: black; color: white; }
 
-div {
-  color: none;
-}
+
 
 
 
@@ -111,6 +109,13 @@ margin: auto;
 padding: 0.5em 0 0.5em 100px;
 }
 
+span {
+font-style: italic;
+color: #ffcc99;
+
+}
+
+
 
 p:first-letter {
 
@@ -163,6 +168,7 @@ margin-bottom: 20px;
 
 #sidenote-1,#overview, #sidenote-2,#sidenote-3 {
   background-color: #0d1a26;
+  border: 1px dotted white;
 }
 
 .loader {
@@ -440,6 +446,16 @@ p.click {
  height: 200px;
  width: 200px;
 
+}
+
+p.1 {
+text-align: right;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+p.1:first-letter {
+  margin-left: 0px;
 }
 
 
