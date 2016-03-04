@@ -268,10 +268,33 @@ z-index: 1;
 
 }
 
+
 }
 
-
 @media print { 
+
+
+.loader {
+  position: relative;
+  display: inline;
+
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  z-index: 200;
+ 
+
+}
+
+  h3 {
+
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  
+}
 
 body {
   color: black
@@ -335,6 +358,7 @@ padding-top: 5px;
     page-break-before: always;
     font-size: 1rem;
     margin: 10px;
+    padding-left: 100px;
 
 }
 
