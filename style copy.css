@@ -262,7 +262,7 @@ z-index: 1;
 
 @media only screen and (max-width: 1200px) {
     
-  .loader {
+  .loader .glossary {
   position: relative;
   display: none;
   visibility: none;
@@ -272,6 +272,24 @@ z-index: 1;
 p {
     width: 1000px;
   }
+
+p.sidenote {
+    width: 100px;
+  }
+
+
+
+.footnote {
+  z-index: 150;
+  top: 40800px;
+  max-width: 100%;
+  right: 0px;
+  position: absolute;
+
+  text-align: left;
+  -webkit-filter: opacity(60%); /* Chrome, Safari, Opera */
+  filter: opacity(60%);
+}
 
 
 }
