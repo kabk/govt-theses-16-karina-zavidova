@@ -30,9 +30,8 @@ recognition.onresult = function(event) {
   // The second [0] returns the SpeechRecognitionAlternative at position 0.
   // We then return the transcript property of the SpeechRecognitionAlternative object 
   var color = event.results[0][0].transcript;
-  diagnostic.textContent = 'result: ' + color;
-  //bg.style.backgroundColor = color;//
-  bg.style.color = color;
+  diagnostic.textContent = 'result received: ' + color + '.';
+  bg.style.backgroundColor = color;
   console.log('Confidence: ' + event.results[0][0].confidence);
 }
 
@@ -44,7 +43,6 @@ recognition.onnomatch = function(event) {
   diagnostic.textContent = 'I didnt recognise that color.';
 }
 
-
 recognition.onerror = function(event) {
- diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
+  diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
 }
