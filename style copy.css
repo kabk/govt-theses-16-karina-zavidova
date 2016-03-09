@@ -275,6 +275,7 @@ z-index: 1;
 @media print { 
 
 
+
 .loader {
   position: relative;
   display: inline;
@@ -298,7 +299,8 @@ z-index: 1;
 }
 
 body {
-  color: black
+  color: black;
+  font-family: Arial, sans-serif;
 }
 
 p{
@@ -347,8 +349,7 @@ p.sidenote {
 
 
 img {
--webkit-filter: opacity(75%); /* Chrome, Safari, Opera */
-filter: opacity(75%);
+
 max-height: 200px;
 max-width: 400px;
 padding-bottom: 5px;
@@ -356,7 +357,7 @@ padding-top: 5px;
 }
 
  h6 {
-    page-break-before: always;
+    page-break-after: always;
     font-size: 1rem;
     margin: 10px;
     padding-left: 100px;
@@ -370,6 +371,7 @@ h4 {
 li {
   font-size: 10px;
 }
+
 
 .overview {
   margin: auto;
