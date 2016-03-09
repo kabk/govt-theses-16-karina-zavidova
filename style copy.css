@@ -619,5 +619,13 @@ p.1:first-letter {
   margin-left: 0px;
 }
 
+.download
+{
+position: fixed;
+padding-top: 300px;
+left: 50px;
+width: 200px;
+height: 400px;
+overflow: none;
 
-
+}
