@@ -269,26 +269,14 @@ z-index: 1;
 
 }
 
-
-}
-
-
-
-@media only screen and (max-width: 500px) {
-
-
- .loader {
-  position: relative;
-  display: none;
-  visibility: none;}
-
-  p {
+p {
     width: 100%;
   }
 
 
-
 }
+
+
 
 @media print { 
 
