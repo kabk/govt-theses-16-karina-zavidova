@@ -11,7 +11,7 @@ recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
-var diagnostic = document.querySelector('.conclusion');
+var diagnostic = document.querySelector('#conclusion');
 var bg = document.querySelector('html');
 
 document.body.onclick = function() {
