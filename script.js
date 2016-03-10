@@ -13,7 +13,7 @@ recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
 var diagnostic = document.querySelector('.output');
-var bg = document.querySelector('html');
+var bg = document.querySelector('#conclusion');
 
 document.body.onclick = function() {
   recognition.start();
@@ -31,7 +31,7 @@ recognition.onresult = function(event) {
   // We then return the transcript property of the SpeechRecognitionAlternative object 
   var color = event.results[0][0].transcript;
   diagnostic.textContent = 'Result received: ' + color + '.';
-  bg.style.backgroundColor = color;
+  bg.style.color = color;
   console.log('Confidence: ' + event.results[0][0].confidence);
 }
 
