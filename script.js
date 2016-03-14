@@ -15,7 +15,7 @@ recognition.maxAlternatives = 1;
 var diagnostic = document.querySelector('.output');
 var bg = document.querySelector('#conclusion');
 
-document.body.onclick = function() {
+document.getElementById('conclusion').onclick = function() {
   recognition.start();
   console.log('Ready to receive a color command.');
 }
