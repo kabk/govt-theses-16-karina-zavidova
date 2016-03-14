@@ -263,9 +263,7 @@ z-index: 1;
 @media only screen and (max-width: 1200px) {
     
   .loader .glossary {
-
   display: none;
-  visibility: none;
 
 }
 
@@ -273,10 +271,13 @@ p {
     width: 1000px;
   }
 
-p.sidenote {
+.sidenote {
     width: 1000px;
   }
 
+#sidenote-1 #sidenote-2 #sidenote-3 {
+  max-width: 100%;
+}
 
 
 .footnote {
