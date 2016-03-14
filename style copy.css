@@ -260,25 +260,35 @@ z-index: 1;
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
     
-  .loader .glossary {
+ .glossary {
+  visibility: hidden;
   display: none;
-
 }
 
-p {
+p{
     width: 1000px;
+    margin-left: none;
   }
 
-.sidenote {
-    width: 1000px;
+p.sidenote {
+    max-width: 800px;
   }
 
-#sidenote-1 #sidenote-2 #sidenote-3 {
-  max-width: 100%;
+#sidenote-1,#overview, #sidenote-2,#sidenote-3 {
+  border: none;
+  width: 1000px;
+  margin-left: none;
+  background-color: none;
 }
 
+
+h2 {
+  font-size: 80px;
+  max-width: 1000px;
+
+}
 
 .footnote {
   z-index: 150;
