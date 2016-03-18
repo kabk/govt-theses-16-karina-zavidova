@@ -310,26 +310,17 @@ h2 {
 @media print { 
 
 
-
-.loader {
-  position: relative;
-  display: inline;
-
-  position: fixed;
-  top: 0;
-  width: 50%;
-  height: 50%;
-  background-color: black;
-  z-index: 200;
- 
-
+#gratefulandalive {
+  margin-top: 800px;
+  font-family: Arial, sans-serif;
 }
 
   h3 {
 
-  position: fixed;
-  top: 10px;
-  left: 20px;
+
+  top: 0px;
+  left: 0px;
+  font-family: Arial, sans-serif;
   
 }
 
@@ -342,26 +333,24 @@ p{
 
 font-size: 12px;
 line-height: auto;
-
+font-family: Arial, sans-serif;
 max-width: 100%;
-
-
-margin-top: 10px;
-
+margin: auto;
 }
 
 p.index {
-  max-width: 100;
+
   font-size: 10px;
+  font-family: Arial, sans-serif;
 }
 
 h2 {
-font-family: 'Alegreya Sans', sans-serif;
+
 font-weight: lighter;
 font-size: 2.5rem;
 margin: auto;
 max-width: 90%;
-
+font-family: Arial, sans-serif;
 }
 
 
@@ -380,6 +369,8 @@ max-width: 90%;
 
 p.sidenote {
   font-size: 10px; 
+  font-family: Arial, sans-serif;
+  max-width: 100%;
 }
 
 
@@ -389,13 +380,14 @@ max-height: 200px;
 max-width: 400px;
 padding-bottom: 5px;
 padding-top: 5px;
+margin: auto;
 }
 
  h6 {
-    page-break-after: always;
+  
     font-size: 1rem;
-    margin: 10px;
-    padding-left: 100px;
+    margin: auto;
+    padding: none;
 
 }
 
@@ -444,6 +436,11 @@ position: relative;
 
 }
 
+.chapter {
+  padding: 0;
+  margin: 0 auto;
+  page-break-after: always
+}
 
 }
 
